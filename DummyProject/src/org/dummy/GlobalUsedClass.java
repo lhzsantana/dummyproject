@@ -2,15 +2,26 @@ package org.dummy;
 
 public class GlobalUsedClass {
 	
-	public String usedVariable;
+	public String usedPublicVariable;
+	
+	private String unusedPrivateVariable;
+	
+	private String usedPrivateVariable;
 	
 	public void usedMethod(String usedParameter){
 		
-		usedVariable=usedParameter;
+		usedPublicVariable=usedParameter;
+		usedPrivateVariable=usedParameter;
 		
 		GlobalUsedClass localUsedClass = new GlobalUsedClass();
 		
-		localUsedClass.usedMethod(usedVariable);
+		localUsedClass.usedMethod(usedPublicVariable);
+	}
+
+	private void privateUnusedMethod(String usedParameter){
+		
+		String privateMethodVariable;
+		
 	}
 
 }
