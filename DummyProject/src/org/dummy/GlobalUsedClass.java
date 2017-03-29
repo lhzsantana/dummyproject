@@ -3,6 +3,8 @@ package org.dummy;
 public class GlobalUsedClass {
 	
 	public String usedPublicVariable;
+
+	public String unusedPublicVariable;
 	
 	private String unusedPrivateVariable;
 	
@@ -14,13 +16,13 @@ public class GlobalUsedClass {
 		usedPrivateVariable=usedParameter;
 		
 		GlobalUsedClass localUsedClass = new GlobalUsedClass();
-		
 		localUsedClass.usedMethod(usedPublicVariable);
 	}
 
-	private void privateUnusedMethod(String usedParameter){
+	private void privateUnusedMethod(String unusedParameter){
 		
 		String privateMethodVariable;
+		
 		
 	}
 
