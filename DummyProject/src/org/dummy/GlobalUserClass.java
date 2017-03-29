@@ -2,7 +2,7 @@ package org.dummy;
 
 public class GlobalUserClass {
 	
-	public void usedMethod(String usedParameter){
+	public void unusedMethod(String usedParameter){
 		
 		GlobalUsedClass globalUsedClass = new GlobalUsedClass();
 		globalUsedClass.usedMethod(usedParameter);
